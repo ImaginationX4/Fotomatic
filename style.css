@@ -50,21 +50,22 @@ html {
     position: fixed;
     z-index: 10;
     width: 100%;
+    height: 5.3125rem;
     background-color: bisque;
   }
   header .content {
     display: flex;
     align-items: center;
-    padding: 1.25rem;
+    padding: 1.825rem;
   }
   header .logo {
-    flex-grow: 1;
+    flex: 1;
   }
   header nav ul {
     display: flex;
   }
   ul,li{
-    list-style: none;
+    list-style: none; /* no dot */
   }
   a {
     color: black;
@@ -72,7 +73,7 @@ html {
   }
 
   nav li {
-    padding-left: 3.5rem;
+    padding-right: 2rem;
   }
 
   nav li:last-child {
@@ -84,7 +85,7 @@ html {
     padding-left: .75rem;
   }
   header .mobile {
-    display: none;
+    display: none; /* do not diplay */
   }
   @media only screen and (max-width: 895px) {
     nav li:last-child {
@@ -92,7 +93,7 @@ html {
     }
   
     header .content {
-      padding: 1rem 1rem;
+      padding: 1.825rem 1rem;
     }
   }
 
@@ -108,8 +109,8 @@ html {
   
     header .mobile ul {
       display: flex;
-      justify-content: space-around;
-      align-items: center;
+      justify-content: space-around; /* left to right */
+      align-items: center; /* up to down */
       width: 100%;
     }
   
@@ -117,3 +118,58 @@ html {
       padding: 0;
     }
   }
+
+  /* Sign Up Section */
+  .main-content {
+    position: relative;
+    top: 5.3125rem; /* To offset for fixed header. */
+  }
+  #sign-up-section {
+    height: 44rem;
+    background-image: url('./images/banner-landingpage.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    
+  }
+  #sign-up-cta {
+    position: relative;
+    
+    left: 10%;
+    padding: 0 5rem 2.5rem 5rem;
+    border: solid 1px #979797;
+    border-radius: 4px;
+    background-color: #9dc20b;
+  }
+  #sign-up-cta .content {
+    width: 25.625rem;
+    margin-top: 2rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    color: white;
+  }
+  #sign-up-cta h1 {
+    font-size: 3.125rem;
+  }
+  #sign-up-cta h2 {
+    font-size: 2.25rem;
+  }
+  #sign-up-cta span strong {
+    font-weight: bold;
+  }
+  #sign-up-cta .cursive {
+    font-family: "Damion", cursive;
+  }
+  #sign-up-cta .striking {
+    font-family: "Rubik", sans-serif;
+    padding-bottom: .75rem;
+  }
+  #sign-up-cta .button {
+    
+    margin-top: 1.625rem;
+    padding: 1.25rem 7.25rem;
+  }
+  
