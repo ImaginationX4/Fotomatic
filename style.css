@@ -134,9 +134,8 @@ html {
     align-items: center;
     
   }
-  #sign-up-cta {
+  #sign-up-cta {/*background set and framework*/
     position: relative;
-    
     left: 10%;
     padding: 0 5rem 2.5rem 5rem;
     border: solid 1px #979797;
@@ -172,4 +171,94 @@ html {
     margin-top: 1.625rem;
     padding: 1.25rem 7.25rem;
   }
-  
+  @media only screen and (max-width: 895px) {
+    #sign-up-section {
+        align-items: center;
+        justify-content: center;
+        height: 28rem;
+      }
+    #sign-up-cta { 
+        width: auto;
+        background-color: transparent;
+        border: none;
+    }
+    #sign-up-cta .email{
+        display: none;
+    }
+    #sign-up-cta h1 {
+        font-size: 3.125rem;
+      }
+    
+      #sign-up-cta h2 {
+        font-size: 2.25rem;
+      }
+
+  }
+
+  /* Features Section */
+  #features-section{
+    display: flex;
+    padding: 4rem 4%;
+    background-color: white;
+  }
+
+  .feature{
+    flex: 1;
+    padding: 2rem;
+
+  }
+  .feature .image-container img {
+  width: 90%;
+  height: 65%;
+  margin: 0 auto;
+  }
+  .feature .content{
+    padding: 1.5rem;
+  }
+  .feature h2 {
+    padding-bottom: .5rem;
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: #3b2f2f;
+  }
+  .feature h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #4a4a4a;
+  }
+
+  @media only screen and (max-width: 895px) {
+    #features-section {
+        padding: 1rem;
+      }
+    .feature {
+        margin: 0px .5rem;
+        padding: 1rem;
+      }
+    
+    .feature h2 {
+        font-size: 2rem;
+        line-height: 1.3;
+      }
+    
+    .feature h3 {
+        font-size: .875rem;
+        line-height: 1.4;
+      }
+  }
+  @media only screen and (max-width: 600px) {
+    #features-section {
+        flex-flow: column;
+        padding: 0;
+    }
+
+    .feature {
+        margin: 0;
+        padding: 1.25rem 1rem 0 1rem;
+    }
+
+    .feature .content {
+        padding: 1.25rem 0 1.875rem 0;
+    }
+  }
+
